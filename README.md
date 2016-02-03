@@ -31,6 +31,9 @@ https://pages.18f.gov/frontend/css-coding-styleguide/
 Airbnb CSS / Sass Styleguide
 https://github.com/airbnb/css
 
+Bootstrap
+http://getbootstrap.com/css/
+
 > 为了语义化，方便识别样式定义的功能，样式名称按小写字母（可缩写：pt = padding-top）加-来分隔的方式
 > 为了和第三方项目样式区分，本公司自定义样式推荐以pb-开头（除了已使用的样式规则）
 > 目前使用的样式规则
@@ -52,9 +55,12 @@ https://github.com/airbnb/css
 > 两条样式分行放，不用放在同一行
 > 样式尽量模块化，以便不同页面引用
 > 样式能简写就简写
+> icon图片尽量合并成sprite
+> 尽量写注释
 ```
 
 ##LESS样式表开发规范
+http://lesscss.org/features/
 
 ##SASS样式表开发规范
 
@@ -82,6 +88,17 @@ https://github.com/felixge/node-style-guide
 ###相关参考
 ```
 > http://www.jslint.com/help.html
+```
+
+###FAQ
+
+* Less报错：Unrecognised input
+```
+left: 20px\9\0;
+
+=>
+
+left: 20px~'\9\0';
 ```
 
 ###
